@@ -1,0 +1,14 @@
+import { Link } from "react-router-dom";
+
+function Item({ item }) {
+    return (
+        <ul>
+            <li>
+                <img src={item.url} alt='item' />
+                <Link to={`/boutique/${item.id}`}>{item.name}</Link>
+            </li>
+        </ul>
+    );
+}
+
+export default Item;
