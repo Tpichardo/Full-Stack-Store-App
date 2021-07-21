@@ -1,11 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-
 import Index from "./Pages/Index";
 import FourOFour from "./Pages/FourOFour.js";
 import Home from "./Pages/Home.js";
-
-
 
 function App() {
   return (
