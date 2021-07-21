@@ -1,9 +1,10 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { apiURL } from "./util/apiURL.js";
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import FourOFour from "./Pages/FourOFour.js";
+import Home from "./Pages/Home.js";
 
 const API = apiURL();
 
@@ -20,11 +21,16 @@ function App() {
   }, []);
   return (
     <div className="App">
-    <Router>
-      <Route path="*">
-        <FourOFour />
-      </Route>
-    </Router>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <FourOFour />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
