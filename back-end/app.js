@@ -18,16 +18,7 @@ app.get("/", (req, res) => {
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
 /////////////////////////////////////
-const db = require("./db/dbConfig.js");
 
-app.get("/test", async (req, res) => {
-  try {
-    const allDays = await db.any("SELECT * FROM boutique");
-    res.json(allDays);
-  } catch (err) {
-    res.json(err);
-  }
-});
 
 app.use("/boutique", boutiqueController);
 

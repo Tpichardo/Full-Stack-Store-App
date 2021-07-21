@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS boutique_dev;
-CREATE DATABASE boutique_dev;
+DROP DATABASE IF EXISTS d3ej33nmbsaaq;
+CREATE DATABASE d3ej33nmbsaaq;
 
-\c boutique_dev;
+\c d3ej33nmbsaaq;
 
 CREATE TABLE boutique (
     id SERIAL PRIMARY KEY, 
