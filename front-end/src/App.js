@@ -2,6 +2,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Switch, Router, Route } from "react-router-dom";
 import { apiURL } from "./util/apiURL.js";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import FourOFour from "./Pages/FourOFour.js";
+
 const API = apiURL();
 
 function App() {
@@ -16,14 +20,12 @@ function App() {
       .catch((c) => console.warn("catch", c));
   }, []);
   return (
-    <div>
-      <ul>
-        {items.map((item) => (
-          <li key={item.name}>{item.name}</li>
-
-        ))}
-      </ul>
-      <h1>HELLO!</h1>
+    <div className="App">
+    <Router>
+      <Route path="*">
+        <FourOFour />
+      </Route>
+    </Router>
     </div>
   );
 }
