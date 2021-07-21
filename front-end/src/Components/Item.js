@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 
-function Item() {
+function Item({ item }) {
     return (
-        <h1>Hello</h1>
+        <ul>
+            <li>
+                <img src={item.url} alt='item' />
+                <Link to={`/boutique/${item.id}`}>{item.name}</Link>
+            </li>
+        </ul>
     );
 }
 

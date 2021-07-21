@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect, } from 'react';
-import { apiURL, apiUrl } from "../util/apiURL.js";
+import { apiURL } from "../util/apiURL.js";
 import Item from "./Item";
 
 const API = apiURL();
@@ -29,4 +29,4 @@ function Items() {
     )
 }
 
-export default Item;
+export default Items;
