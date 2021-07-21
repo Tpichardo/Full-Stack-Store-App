@@ -1,7 +1,13 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { apiURL } from "./util/apiURL.js";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 import Index from "./Pages/Index";
 import FourOFour from "./Pages/FourOFour.js";
+import Home from "./Pages/Home.js";
 
 
 
@@ -10,6 +16,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          <Route exact path="/">
+            <Home />
           <Route exact path="/boutique">
             <Index />
           </Route>
