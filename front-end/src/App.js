@@ -3,11 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Index from "./Pages/Index";
 import FourOFour from "./Pages/FourOFour.js";
 import Home from "./Pages/Home.js";
+import UpdateItem from "./Components/UpdateItemForm";
+import Show from "./Pages/Show";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        {[]}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -15,6 +18,15 @@ function App() {
           <Route exact path="/boutique">
             <Index />
           </Route>
+
+          <Route exact path="/boutique/:id">
+            <Show />
+          </Route>
+
+          <Route path="/boutique/:id/update">
+            <UpdateItem />
+          </Route>
+
           <Route path="*">
             <FourOFour />
           </Route>
