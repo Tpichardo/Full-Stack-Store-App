@@ -7,12 +7,16 @@ import UpdateItem from "./Components/UpdateItemForm";
 import Show from "./Pages/Show";
 import New from "./Pages/New.js";
 
+import NavBar from "./Components/NavBar";
+import './App.css';
+
 function App() {
   return (
     <div className="App">
       <Router>
         {[]}
         <Switch>
+          <NavBar/>
           <Route exact path="/">
             <Home />
           </Route>
