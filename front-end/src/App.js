@@ -14,14 +14,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-<<<<<<< HEAD
-        <NavBar/>
+        <NavBar />
         <Switch>
-=======
-      <NavBar/>
-      <Switch>      
-      
->>>>>>> f214864e3dcb2332bd8bb8df3f9dccb2e523665a
           <Route exact path="/">
             <Home />
           </Route>
