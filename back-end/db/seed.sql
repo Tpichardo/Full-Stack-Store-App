@@ -7,4 +7,7 @@ INSERT INTO boutique (name, brand, category, price, in_stock, url) VALUES
 ('Ski 5 Wrap-Around Sunglassess', 'Christian Dior', 'sun glassess', 75.00, false, 'https://i.pinimg.com/originals/4e/1f/d3/4e1fd391305a1f3011c439f001af56c9.jpg' ),
 ('Gold Plated Sunglasses AW 2000', 'Dior', 'sun glassess', 90.00, false, 'https://dtpmhvbsmffsz.cloudfront.net/posts/2017/07/03/595a0554291a35dd960a875c/m_595a055b78b31c74200a6d49.jpg'),
 ('Hermes Clic', 'Hermes', 'handbag', 7550.00, true, 'https://assets.hermes.com/is/image/hermesproduct/hermes-clic-h-33-bag--077857CK89-front-1-300-0-850-850_b.jpg'),
-('Takashi Murakami', 'Louis Vuitton', 'handbag', 1395.00, false, 'https://cdn.shopify.com/s/files/1/1248/8217/products/803e3cd3c1410f61ee939257a7c88173_2000x.jpg?v=1605197755');
+('Takashi Murakami', 'Louis Vuitton', 'handbag', 1395.00, false, 'https://cdn.shopify.com/s/files/1/1248/8217/products/803e3cd3c1410f61ee939257a7c88173_2000x.jpg?v=1605197755'),
+('Mini Lady Dior Dioramour Bag', 'Dior', 'handbag', 4700.00, true, 'https://media.dior.com/img/en_us/sku/couture/M0505ONGH_M030_TU?imwidth=460'),
+('Medium Lady D-Lite Bag', 'Dior', 'handbag', 5300.00, true, 'https://media.dior.com/img/en_us/sku/couture/M0565ORHP_M928_TU?imwidth=460'),
+('Geometrical-frame sunglasses with crystals', 'Gucci', 'sunglasses', 1230.00, false, 'https://media.gucci.com/style/DarkGray_South_0_160_540x540/1616585406/663740_I3330_8059_001_100_0000_Light-Geometrical-frame-sunglasses-with-crystals.jpg');
