@@ -4,7 +4,7 @@ function Item({ item }) {
     return (
         <ul>
             <li>
-                <img src={item.url} alt='item' />
+                <img src={item.url} alt={item.name} />
                 <Link to={`/boutique/${item.id}`}>{item.name}</Link>
             </li>
         </ul>
