@@ -8,7 +8,7 @@ import Show from "./Pages/Show";
 import New from "./Pages/New.js";
 
 import NavBar from "./Components/NavBar";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
