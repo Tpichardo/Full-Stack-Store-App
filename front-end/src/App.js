@@ -7,7 +7,7 @@ import UpdateItem from "./Components/UpdateItemForm";
 import Show from "./Pages/Show";
 import New from "./Pages/New.js";
 
-import NavBar from "./Components/NavBar";
+// import NavBar from "./Components/NavBar";
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Router>
         {[]}
         <Switch>
-          <NavBar/>
+          {/* <NavBar/> */}
           <Route exact path="/">
             <Home />
           </Route>
