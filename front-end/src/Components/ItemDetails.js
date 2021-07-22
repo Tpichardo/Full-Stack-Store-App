@@ -35,8 +35,8 @@ function ItemDetails({ history, match }) {
         <Link to="/boutique">
           <button>Back</button>
         </Link>
-        <Link to={`/boutique/${item.id}/edit`}>
-          <button>Edit</button>
+        <Link to={`/boutique/${item.id}/update`}>
+          <button>Update</button>
         </Link>
         <button>Delete</button>
       </div>
