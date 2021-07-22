@@ -5,6 +5,7 @@ import FourOFour from "./Pages/FourOFour.js";
 import Home from "./Pages/Home.js";
 import UpdateItem from "./Components/UpdateItemForm";
 import Show from "./Pages/Show";
+import New from "./Pages/New.js";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
 
           <Route path="/boutique/:id/update">
             <UpdateItem />
+          </Route>
+
+          <Route path="/boutique/new">
+            <New />
           </Route>
 
           <Route path="*">
