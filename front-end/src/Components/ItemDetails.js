@@ -22,6 +22,15 @@ function ItemDetails({ history, match }) {
       });
   }, [id, history]);
 
+  const handleDelete = async () => {
+    try {
+      const response = await axios.delete(`${API}/boutique/${id}`);
+      history.push("/boutique");
+      // do we need to update our frontend application state by deleting the bookmark?
+    } catch (e) {
+      console.error(e);
+    }
+  };
   return (
     <div>
       <div className="showItemDetails">
@@ -38,7 +47,7 @@ function ItemDetails({ history, match }) {
         <Link to={`/boutique/${item.id}/edit`}>
           <button>Edit</button>
         </Link>
-        <button>Delete</button>
+        <button onClick={handleDelete}>Delete</button>
       </div>
     </div>
   );
