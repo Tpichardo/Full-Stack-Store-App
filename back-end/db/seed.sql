@@ -3,13 +3,12 @@
 INSERT INTO boutique (name, brand, category, price, in_stock, url) VALUES
 ('Marmont Bag', 'Gucci', 'Handbag', 2200.00, true , 'https://www.pngitem.com/pimgs/m/347-3474254_gucci-marmont-leather-443497-dtdid-1000-hd-png.png'),
 ('Supreme Ophidia', 'Gucci', 'Handbag', 1490.00, true, 'https://cdn-images.farfetch-contents.com/12/56/25/66/12562566_11923829_480.jpg'),
-('Faux Leather Sweatpants', 'ALICE + OLIVIA', 'Pants', 295.00, true, 'https://static.orchardmile.us/webp/full/alice-and-olivia/bb94a71b314f5556beb1a488bce8cb4dc7b49aa2.webp'),
 ('Ski 5 Wrap-Around Sunglassess', 'Christian Dior', 'Sunglassess', 75.00, false, 'https://i.pinimg.com/originals/4e/1f/d3/4e1fd391305a1f3011c439f001af56c9.jpg' ),
 ('Airspeed Sunglasses', 'Christian Dior', 'Sunglassess', 200.00, false, 'https://assets.bigcartel.com/product_images/279228353/Dior+Airspeed+Sunglasses+main.jpg?auto=format&fit=max&h=1000&w=1000'),
-('Hermes Clic', 'Hermes', 'handbag', 7550.00, true, 'https://assets.hermes.com/is/image/hermesproduct/hermes-clic-h-33-bag--077857CK89-front-1-300-0-850-850_b.jpg'),
-('Mini Lady Dior Dioramour Bag', 'Dior', 'handbag', 4700.00, true, 'https://media.dior.com/img/en_us/sku/couture/M0505ONGH_M030_TU?imwidth=460'),
-('Medium Lady D-Lite Bag', 'Dior', 'handbag', 5300.00, true, 'https://media.dior.com/img/en_us/sku/couture/M0565ORHP_M928_TU?imwidth=460'),
-('Geometrical-frame sunglasses with crystals', 'Gucci', 'sunglasses', 1230.00, false, 'https://media.gucci.com/style/DarkGray_South_0_160_540x540/1616585406/663740_I3330_8059_001_100_0000_Light-Geometrical-frame-sunglasses-with-crystals.jpg');
+('Hermes Clic', 'Hermes', 'Handbag', 7550.00, true, 'https://assets.hermes.com/is/image/hermesproduct/hermes-clic-h-33-bag--077857CK89-front-1-300-0-850-850_b.jpg'),
+('Mini Lady Dior Dioramour Bag', 'Dior', 'Handbag', 4700.00, true, 'https://media.dior.com/img/en_us/sku/couture/M0505ONGH_M030_TU?imwidth=460'),
+('Medium Lady D-Lite Bag', 'Dior', 'Handbag', 5300.00, true, 'https://media.dior.com/img/en_us/sku/couture/M0565ORHP_M928_TU?imwidth=460'),
+('Geometrical-frame sunglasses with crystals', 'Gucci', 'Sunglasses', 1230.00, false, 'https://media.gucci.com/style/DarkGray_South_0_160_540x540/1616585406/663740_I3330_8059_001_100_0000_Light-Geometrical-frame-sunglasses-with-crystals.jpg'),
 ('Takashi Murakami', 'Louis Vuitton', 'Handbag', 1395.00, false, 'https://cdn.shopify.com/s/files/1/1248/8217/products/803e3cd3c1410f61ee939257a7c88173_2000x.jpg?v=1605197755'),
 ('CANDY Sunglassess', 'Juicy Couture', 'Sunglassess', 194.00, true, 'https://i1.go-optic.com/w900%7Ch600%7Cf/3jucyCANDYS.jpg'),
 ('Milla Sunglasses', 'Juicy Couture', 'Sunglassess', 200.00, true, 'https://dtpmhvbsmffsz.cloudfront.net/posts/2013/04/21/5174b599bdb60028f3020a28/m_5174b59fbdb60028f3020a31.jpg'),
