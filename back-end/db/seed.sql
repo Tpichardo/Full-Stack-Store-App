@@ -21,6 +21,8 @@ INSERT INTO boutique (name, brand, category, price, in_stock, url) VALUES
 ('White Tank-Top', 'Baby Phat', 'Tops', 30.00, false, 'https://fashionista.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTY0NzMzODgyNjg2NTE1MTU2/baby-phat-forever-21-white-tank.jpg'),
 ('Black Asymmetical Crop Top', 'Baby Phat', 'Tops', 50.00, true, 'https://fashionista.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTY0NzMzODgyMTQ5ODQwODUy/baby-phat-forever-21-black-one-shouldered-crop-top.jpg'),
 ('Artelier Limited Edition Jeans Culottes', 'Nicole Miller', 'Bottoms', 404.00, true, 'https://a.1stdibscdn.com/archivesE/upload/1121189/v_58693121549008043481/5869312_master.jpg?width=768'),
-('Retro Flare Denim Bellbottoms', 'Von Dutch', 'Bottoms', 300, false, 'https://s.abcnews.com/images/GMA/von-dutch-jeans-main-ht-jt-201026_1603724736274_hpMain_16x9_992.jpg'),
-('Ed Hardy Sweater', 'Ed Hardy ','Sweaters', 150, false, 'https://cdn.fs.grailed.com/api/file/M4Hs5ZFtT9uG5Lpv6386'),
-('Ed Hardy Jeans', 'Ed Hardy ','Bottoms', 200, false, 'https://dtpmhvbsmffsz.cloudfront.net/posts/2015/05/06/554aa1d89c6fcf41330000e4/m_586b38259c6fcf687012f95f.jpg');
+('Retro Flare Denim Bell Bottoms', 'Von Dutch', 'Bottoms', 300.00, false, 'https://s.abcnews.com/images/GMA/von-dutch-jeans-main-ht-jt-201026_1603724736274_hpMain_16x9_992.jpg'),
+('Ed Hardy Sweater', 'Ed Hardy ','Sweaters', 150.00, false, 'https://cdn.fs.grailed.com/api/file/M4Hs5ZFtT9uG5Lpv6386'),
+('Ed Hardy Jeans', 'Ed Hardy ','Bottoms', 200.00, false, 'https://dtpmhvbsmffsz.cloudfront.net/posts/2015/05/06/554aa1d89c6fcf41330000e4/m_586b38259c6fcf687012f95f.jpg'),
+('Juicy Couture Purse', 'Juicy Coture', 'Hanbag', 250.00, true, 'https://i.pinimg.com/originals/6c/6d/99/6c6d99befa4c855caa724d6ab21467cc.jpg'),
+('Hot Pink Python Print Bell Bottoms', 'Gucci By Tom Ford', 'Bottoms', 300.00, false, 'https://a.1stdibscdn.com/archivesE/upload/1121189/v_1216772/1216772_l.jpg');
