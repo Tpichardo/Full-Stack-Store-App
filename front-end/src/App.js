@@ -4,11 +4,14 @@ import Index from "./Pages/Index";
 import FourOFour from "./Pages/FourOFour.js";
 import Home from "./Pages/Home.js";
 
+import NavBar from "./Components/NavBar";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <NavBar/>
           <Route exact path="/">
             <Home />
           </Route>
