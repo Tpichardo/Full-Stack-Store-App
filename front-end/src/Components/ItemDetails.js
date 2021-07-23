@@ -5,7 +5,7 @@ import { apiURL } from "../util/apiURL";
 
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Row  from 'react-bootstrap/Row';
+import Row from 'react-bootstrap/Row';
 
 const API = apiURL();
 
@@ -13,6 +13,14 @@ function ItemDetails({ history, match }) {
   const [item, setItem] = useState([]);
 
   const { id } = match.params;
+
+  const deleteItem = async () => {
+    try {
+      await axios.delete(`${API}/boutique/${id}`);
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
   useEffect(() => {
     axios
@@ -27,14 +35,10 @@ function ItemDetails({ history, match }) {
   }, [id, history]);
 
   const handleDelete = async () => {
-    try {
-      const response = await axios.delete(`${API}/boutique/${id}`);
-      history.push("/boutique");
-      // do we need to update our frontend application state by deleting the bookmark?
-    } catch (e) {
-      console.error(e);
-    }
+    await deleteItem()
+    history.push("/boutique");
   };
+
   return (
     <div>
       <div className="showItemDetails">
