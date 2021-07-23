@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Form from 'react-bootstrap/Form';
+import Button from "react-bootstrap/Button";
 import { apiURL } from "../util/apiURL";
 
 export default function UpdateItemForm() {
@@ -52,74 +55,77 @@ export default function UpdateItemForm() {
   };
 
   return (
-    <div className="updateForm">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Item Name:</label>
-        <input
-          id="name"
-          value={item.name}
-          type="text"
-          onChange={handleTextChange}
-          placeholder="Enter Item Name..."
-          required
-        />
-
-        <label htmlFor="brand">Brand:</label>
-        <input
-          id="brand"
-          type="text"
-          name="brand"
-          value={item.brand}
-          placeholder="Enter Brand..."
-          onChange={handleTextChange}
-        />
-
-        <label htmlFor="category">Category:</label>
-        <input
-          id="category"
-          type="text"
-          name="category"
-          value={item.category}
-          placeholder="Enter Category..."
-          onChange={handleTextChange}
-        />
-
-        <label htmlFor="price">Price:</label>
-        <input
-          id="price"
-          type="text"
-          name="price"
-          value={item.price}
-          placeholder="Enter Price..."
-          onChange={handleTextChange}
-        />
-
-        <label htmlFor="in_stock">In Stock:</label>
-        <input
-          id="in_stock"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={item.in_stock}
-        />
-
-        <label htmlFor="url">Image URL:</label>
-        <input
-          id="url"
-          type="text"
-          pattern="http[s]*://.+"
-          required
-          value={item.url}
-          placeholder="http://"
-          onChange={handleTextChange}
-        />
-
-        <br />
-
-        <input type="submit" />
-      </form>
+    <Container>
+      <h1>Edit Item</h1>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="name">
+          <Form.Label>Name </Form.Label>
+          <Form.Control
+            value={item.name}
+            type="text"
+            required
+            onChange={handleTextChange}
+            placeholder="Item Name"
+          />
+        </Form.Group>
+        <Form.Group controlId="brand">
+          <Form.Label>Brand </Form.Label>
+          <Form.Control
+            value={item.brand}
+            type="text"
+            required
+            onChange={handleTextChange}
+            placeholder="What's the Brand?"
+          />
+        </Form.Group>
+        <Form.Group controlId="category">
+          <Form.Label>Category </Form.Label>
+          <Form.Control
+            value={item.category}
+            type="text"
+            required
+            onChange={handleTextChange}
+            placeholder="What's the Category?"
+          />
+        </Form.Group>
+        <Form.Group controlId="price">
+          <Form.Label>Price </Form.Label>
+          <Form.Control
+            value={item.price}
+            type="number"
+            required
+            onChange={handleTextChange}
+            placeholder="How much is it?"
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Check
+            type="checkbox"
+            id={item.in_stock}
+            label="In stock?"
+            onChange={handleCheckboxChange}
+            checked={item.in_stock}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="url">
+          <Form.Label>Url</Form.Label>
+          <Form.Control
+            type="text"
+            pattern="http[s]*://.+"
+            required
+            value={item.url}
+            placeholder="http://"
+            onChange={handleTextChange}
+          />
+        </Form.Group>
+        <Button variant="secondary" type="submit">
+          Submit
+        </Button>
+      </Form>
+      <br />
       <Link to={`/boutique/${id}`}>
-        <button>Cancel!</button>
+        <Button>Cancel</Button>
       </Link>
-    </div>
+    </Container >
   );
 }
