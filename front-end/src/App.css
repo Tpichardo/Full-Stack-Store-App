@@ -1,4 +1,17 @@
 .App {
     text-align: center;
-    background-color: pink;
+    transition: 2s;
 }
+
+.App:hover {
+    text-align: center;
+    background-color: pink;
+    transition: 2s;
+    transform:matrix()
+}
+
+
+
+/* .navbar {
+    text-align: center;
+} */

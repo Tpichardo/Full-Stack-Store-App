@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: pink;
+  background-image: url('./Images/GILWGS.png');
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 code {

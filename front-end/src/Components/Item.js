@@ -4,10 +4,10 @@ import Image from "react-bootstrap/Image";
 
 function Item({ item }) {
   return (
-    <ul>
+    <ul >
       <li style={{ listStyleType : "none" }}>
         <Container>
-          <Image src={item.url} style={{ width: 250 }} alt={item.name} roundedCircle/>
+          <Image src={item.url} style={{ width: 200 }} alt={item.name} roundedCircle/>
           <Link to={`/boutique/${item.id}`}>{item.name}</Link>
         </Container>
       </li>
