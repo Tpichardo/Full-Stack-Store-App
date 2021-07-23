@@ -22,19 +22,15 @@ function App() {
           <Route exact path="/boutique">
             <Index />
           </Route>
-
-          <Route exact path="/boutique/:id">
-            <Show />
-          </Route>
-
-          <Route path="/boutique/:id/update">
-            <UpdateItem />
-          </Route>
-
           <Route path="/boutique/new">
             <New />
           </Route>
-
+          <Route exact path="/boutique/:id">
+            <Show />
+          </Route>
+          <Route path="/boutique/:id/update">
+            <UpdateItem />
+          </Route>
           <Route path="*">
             <FourOFour />
           </Route>
