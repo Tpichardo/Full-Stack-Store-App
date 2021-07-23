@@ -1,17 +1,21 @@
 .App {
-    text-align: center;
-    transition: 2s;
+  transition: 2s;
+  width: 40%;
 }
 
 .App:hover {
-    text-align: center;
-    background-color: pink;
-    transition: 2s;
-    transform:matrix()
+  background-color: pink;
+  transition: 2s;
+  width: 100%;
 }
 
+.navbar {
+  text-align: center;
+}
 
-
-/* .navbar {
-    text-align: center;
-} */
+.burger {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}

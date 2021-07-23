@@ -32,7 +32,7 @@ function ItemDetails({ history, match }) {
         <h5>Price: ${item.price}</h5>
         <h5>In stock: {JSON.stringify(item.in_stock)}</h5>
 
-        <img src={item.url} alt={item.name} />
+        <img src={item.url} style={{ width: 350 }} alt={item.name} />
 
         <div className="showItem"></div>
         <Link to="/boutique">
