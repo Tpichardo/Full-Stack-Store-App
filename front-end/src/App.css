@@ -1,6 +1,7 @@
 .App {
+    /* text-align: center; */
   transition: 2s;
-  width: 40%;
+  /* width: 40%; */
 }
 
 .App:hover {
@@ -16,6 +17,6 @@
 .burger {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #53126a;
   margin: 6px 0;
 }
