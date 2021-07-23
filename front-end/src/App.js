@@ -7,6 +7,8 @@ import UpdateItem from "./Components/UpdateItemForm";
 import Show from "./Pages/Show";
 import New from "./Pages/New.js";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import NavBar from "./Components/NavBar";
 import "./App.css";
 
