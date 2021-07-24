@@ -1,4 +1,22 @@
 .App {
-    text-align: center;
-    background-color: pink;
+    /* text-align: center; */
+  transition: 2s;
+  /* width: 40%; */
+}
+
+.App:hover {
+  background-color: pink;
+  transition: 2s;
+  width: 100%;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.burger {
+  width: 35px;
+  height: 5px;
+  background-color: #790aa1;
+  margin: 6px 0;
 }

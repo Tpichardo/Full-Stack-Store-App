@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom'
+
+
 
 export default function NavBar() {
   return (
     <nav>
+    
+                <div className="burger"></div>
+            <div className="burger"></div>
+            <div className="burger"></div>
       <h1>
         <Link to="/">
           <Button variant="outline-danger" size="lg">
@@ -24,3 +30,4 @@ export default function NavBar() {
     </nav>
   );
 }
+

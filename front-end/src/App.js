@@ -9,6 +9,7 @@ import New from "./Pages/New.js";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import NavBar from "./Components/NavBar";
 import "./App.css";
 
