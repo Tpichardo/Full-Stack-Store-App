@@ -20,7 +20,8 @@
   margin: 6px 0;
 }
 
-img.bg {
+.img.bg {
+    background: url(Images/gilwgsEDIT.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
