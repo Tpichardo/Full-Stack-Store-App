@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useHistory, Link, withRouter } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Form from 'react-bootstrap/Form';
+import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { apiURL } from "../util/apiURL.js";
 
@@ -44,7 +44,6 @@ function BoutiqueNewForm() {
   };
   return (
     <Container>
-      <h1>Edit Item</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
           <Form.Label>Name </Form.Label>
@@ -114,7 +113,7 @@ function BoutiqueNewForm() {
       <Link to={"/boutique"}>
         <Button>Cancel</Button>
       </Link>
-    </Container >
+    </Container>
   );
   // <div className="New">
   //   <form onSubmit={handleSubmit}>
