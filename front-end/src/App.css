@@ -1,7 +1,6 @@
 .App {
-    /* text-align: center; */
+  text-align: center;
   transition: 2s;
-  /* width: 40%; */
 }
 
 .App:hover {
