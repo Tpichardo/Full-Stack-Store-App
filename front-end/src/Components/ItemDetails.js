@@ -5,7 +5,8 @@ import { apiURL } from "../util/apiURL";
 
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Row from 'react-bootstrap/Row';
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
 
 const API = apiURL();
 
@@ -35,31 +36,40 @@ function ItemDetails({ history, match }) {
   }, [id, history]);
 
   const handleDelete = async () => {
-    await deleteItem()
+    await deleteItem();
     history.push("/boutique");
   };
 
   return (
     <div>
       <div className="showItemDetails">
-        <h1>Name: {item.name}</h1>
+        <h1>{item.name}</h1>
         <h5>Brand: {item.brand}</h5>
         <h5>Category: {item.category}</h5>
         <h5>Price: ${item.price}</h5>
         <h5>In stock: {JSON.stringify(item.in_stock)}</h5>
         <Container>
-          <Row>
-            <Image src={item.url} alt={item.name} roundedCircle />
+          <Row className="justify-content-md-center">
+            <Image
+              src={item.url}
+              style={{ width: 300 }}
+              alt={item.name}
+              className="rounded mx-auto d-block"
+              thumbnail
+            />
           </Row>
-        </Container>
+        </Container>{" "}
+        <br></br>
         <div className="showItem"></div>
         <Link to="/boutique">
-          <button>Back</button>
-        </Link>
+          <Button variant="outline-danger">Back</Button>
+        </Link>{" "}
         <Link to={`/boutique/${item.id}/update`}>
-          <button>Update</button>
-        </Link>
-        <button onClick={handleDelete}>Delete</button>
+          <Button variant="outline-danger">Update</Button>
+        </Link>{" "}
+        <Button variant="outline-danger" onClick={handleDelete}>
+          Delete
+        </Button>{" "}
       </div>
     </div>
   );
