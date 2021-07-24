@@ -3,12 +3,10 @@ import { withRouter, Link } from "react-router-dom";
 import axios from "axios";
 import { apiURL } from "../util/apiURL";
 
-
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
-
 
 const API = apiURL();
 
@@ -50,11 +48,6 @@ function ItemDetails({ history, match }) {
         <h5>Category: {item.category}</h5>
         <h5>Price: ${item.price}</h5>
         <h5>In stock: {JSON.stringify(item.in_stock)}</h5>
-
-
-        <img src={item.url} style={{ width: 350 }} alt={item.name} />
-
-
         <Container>
           <Row className="justify-content-md-center">
             <Image
@@ -67,7 +60,6 @@ function ItemDetails({ history, match }) {
           </Row>
         </Container>{" "}
         <br></br>
-
         <div className="showItem"></div>
         <Link to="/boutique">
           <Button variant="outline-danger">Back</Button>
