@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
 import { useHistory, Link, withRouter } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import { apiURL } from "../util/apiURL.js";
+
+import { Container, Form, Button } from "react-bootstrap";
+import { FcCancel } from "react-icons/fc"
+
 
 const API = apiURL();
 
@@ -105,13 +106,13 @@ function BoutiqueNewForm() {
             onChange={handleTextChange}
           />
         </Form.Group>
-        <Button variant="secondary" type="submit">
+        <Button variant="outline-danger" type="submit">
           Submit
         </Button>
       </Form>
       <br />
       <Link to={"/boutique"}>
-        <Button>Cancel</Button>
+        <Button variant="outline-secondary"><FcCancel /> Nevermind not Hot enough  </Button>
       </Link>
     </Container>
   );
