@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect, } from 'react';
 import { apiURL } from "../util/apiURL.js";
 import Item from "./Item";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row"
 
 const API = apiURL();
 
@@ -22,9 +24,17 @@ function Items() {
 
     return (
         <div>
-            {items.map(item => {
-                return <Item key={item.id} item={item} />
-            })}
+            <Container>
+                <Row className="row-cols-4">
+                    {items.map(item => {
+                        return (
+                            <div key={item.id} className="col">
+                                <Item item={item} />
+                            </div>
+                        );
+                    })};
+                </Row>
+            </Container>
         </div>
     )
 }
