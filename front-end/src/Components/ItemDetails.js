@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import { withRouter, Link } from "react-router-dom";
 import axios from "axios";
 import { apiURL } from "../util/apiURL";
-
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
+import { Container, Image, Row, Button } from "react-bootstrap";
 
 const API = apiURL();
 

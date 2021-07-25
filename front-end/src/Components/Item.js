@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+import { Container, Image } from "react-bootstrap";
+
 
 function Item({ item }) {
   return (
@@ -13,7 +13,8 @@ function Item({ item }) {
           className="rounded mx-auto d-block"
         />
       </Link>
-      <Link to={`/boutique/${item.id}`}>{item.name}</Link>
+      {item.name}
+
     </Container>
   );
 }

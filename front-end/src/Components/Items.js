@@ -2,8 +2,8 @@ import axios from "axios";
 import { useState, useEffect, } from 'react';
 import { apiURL } from "../util/apiURL.js";
 import Item from "./Item";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row"
+import { Container, Row } from "react-bootstrap";
+
 
 const API = apiURL();
 
@@ -31,8 +31,8 @@ function Items() {
                             <div key={item.id} className="col">
                                 <Item item={item} />
                             </div>
-                        );
-                    })};
+                        )
+                    })}
                 </Row>
             </Container>
         </div>
