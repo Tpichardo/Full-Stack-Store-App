@@ -64,11 +64,11 @@ function ItemDetails({ history, match }) {
         </Link>{" "}
         <Link to={`/boutique/${item.id}/update`}>
           <Button variant="outline-danger">
-            Make Hotter <FiEdit2 />
+            <FiEdit2 />  Make Hotter
           </Button>
         </Link>{" "}
         <Button variant="outline-danger">
-          Not Hot <BsTrash onClick={handleDelete} />
+          <BsTrash onClick={handleDelete} /> Not Hot
         </Button>{" "}
       </div>
     </div>
