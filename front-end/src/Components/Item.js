@@ -11,12 +11,11 @@ function Item({ item }) {
           src={item.url}
           style={{ width: 250 }}
           alt={item.name}
-          className="rounded mx-auto d-block"
+          className="rounded mx-auto d-block img-fluid"
         />
       </Link>
       <h5>{item.name}</h5>
       ${(item.price).toLocaleString("en-US")}
-
     </Container>
   );
 }
