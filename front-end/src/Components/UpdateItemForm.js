@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Form from 'react-bootstrap/Form';
-import Button from "react-bootstrap/Button";
 import { apiURL } from "../util/apiURL";
+
+import { Container, Form, Button } from "react-bootstrap";
+
 
 export default function UpdateItemForm() {
   let { id } = useParams();
@@ -118,13 +118,13 @@ export default function UpdateItemForm() {
             onChange={handleTextChange}
           />
         </Form.Group>
-        <Button variant="secondary" type="submit">
+        <Button variant="outline-danger" type="submit">
           Submit
         </Button>
       </Form>
       <br />
       <Link to={`/boutique/${id}`}>
-        <Button>Cancel</Button>
+        <Button variant="outline-secondary"> Cancel </Button>
       </Link>
     </Container >
   );
