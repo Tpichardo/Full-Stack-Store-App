@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import { Container, Image } from "react-bootstrap";
 
 
@@ -13,7 +14,8 @@ function Item({ item }) {
           className="rounded mx-auto d-block"
         />
       </Link>
-      {item.name}
+      <h5>{item.name}</h5>
+      ${(item.price).toLocaleString("en-US")}
 
     </Container>
   );
