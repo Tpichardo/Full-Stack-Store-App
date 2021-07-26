@@ -25,8 +25,8 @@ function Items() {
 
     return (
         <div>
-            <Container>
-                <Row className="row-cols-4">
+            <Container fluid="xs">
+                <Row className="row-cols-3">
                     {items.map(item => {
                         return (
                             <div key={item.id} className="col">
