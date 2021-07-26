@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
 
 .App {
   text-align: center;
   transition: 2s;
-  font-family: 'Sofia', cursive;
+  font-family: 'Emilys Candy', cursive;
 }
 
 .App:hover {
