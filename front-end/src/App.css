@@ -13,19 +13,19 @@
   text-align: center;
 }
 
-.burger {
-  width: 35px;
-  height: 5px;
-  background-color: #790aa1;
-  margin: 6px 0;
-}
-
 .img.bg {
     background: url(Images/gilwgsEDIT.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@font-face {
+  font-family: 'piglateregular';
+  src: url('./Fonts/piglateregular-6yljx-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media screen and (max-width: 1024px) {
