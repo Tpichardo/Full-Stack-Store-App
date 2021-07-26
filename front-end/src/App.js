@@ -1,5 +1,7 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Index from "./Pages/Index";
 import FourOFour from "./Pages/FourOFour.js";
 import Home from "./Pages/Home.js";
@@ -7,11 +9,7 @@ import UpdateItem from "./Components/UpdateItemForm";
 import Show from "./Pages/Show";
 import New from "./Pages/New.js";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import NavBar from "./Components/NavBar";
-import "./App.css";
-
 
 function App() {
   return (
