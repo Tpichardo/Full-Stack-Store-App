@@ -4,6 +4,7 @@
   text-align: center;
   transition: 2s;
   font-family: 'Emilys Candy', cursive;
+  color: #fa1446;
 }
 
 .App:hover {
