@@ -3,7 +3,7 @@ import { useState, useEffect, } from 'react';
 import { apiURL } from "../util/apiURL.js";
 import Item from "./Item";
 
-import { Container, Row } from "react-bootstrap";
+import { CardGroup, Container } from "react-bootstrap";
 
 
 const API = apiURL();
@@ -24,19 +24,15 @@ function Items() {
     }, []);
 
     return (
-        <div>
-            <Container fluid="xs">
-                <Row className="row-cols-3">
-                    {items.map(item => {
-                        return (
-                            <div key={item.id} className="col">
-                                <Item item={item} />
-                            </div>
-                        )
-                    })}
-                </Row>
-            </Container>
-        </div>
+        <Container>
+            <CardGroup className="m-5">
+                {items.map(item => {
+                    return (
+                        <Item item={item} />
+                    )
+                })}
+            </CardGroup>
+        </Container>
     )
 }
 
