@@ -27,7 +27,7 @@ function BoutiqueNewForm() {
     name: "",
     brand: "",
     category: "",
-    price: null,
+    price: "",
     in_stock: true,
   });
 
