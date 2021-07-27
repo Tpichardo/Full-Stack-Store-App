@@ -28,7 +28,7 @@ function Items() {
             <CardGroup className="m-5">
                 {items.map(item => {
                     return (
-                        <Item item={item} />
+                        <Item item={item} key={item.id} />
                     )
                 })}
             </CardGroup>
