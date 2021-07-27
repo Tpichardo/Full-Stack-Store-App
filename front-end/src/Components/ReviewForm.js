@@ -42,7 +42,7 @@ function ReviewForm(props) {
     <Container >
       {props.children}
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="reviwer">
+        <Form.Group controlId="reviewer">
           <Form.Label>Name </Form.Label>
           <Form.Control
             value={review.reviewer}
