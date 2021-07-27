@@ -4,15 +4,9 @@ import axios from "axios";
 import { apiURL } from "../util/apiURL";
 import Reviews from "./Reviews.js";
 
-<<<<<<< HEAD
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-=======
 import { Container, Image, Row, Button } from "react-bootstrap";
-import { BsTrash } from 'react-icons/bs'
-import { FiEdit2 } from 'react-icons/fi';
->>>>>>> 9f301a6592b8d7ed3bee00456fd2ff0c4274b6e9
+import { BsTrash } from "react-icons/bs";
+import { FiEdit2 } from "react-icons/fi";
 
 const API = apiURL();
 
@@ -62,7 +56,11 @@ function ItemDetails({ history, match }) {
           </Row>
           <h5>Brand: {item.brand}</h5>
           <h5>Price: ${item.price}</h5>
-          {JSON.stringify(item.in_stock) === "false" ? <h5 className="text-danger">Out of stock</h5> : <h5 className="text-success">In stock</h5>}
+          {JSON.stringify(item.in_stock) === "false" ? (
+            <h5 className="text-danger">Out of stock</h5>
+          ) : (
+            <h5 className="text-success">In stock</h5>
+          )}
         </Container>{" "}
         <br></br>
         <div className="showItem"></div>
@@ -71,7 +69,7 @@ function ItemDetails({ history, match }) {
         </Link>{" "}
         <Link to={`/boutique/${item.id}/update`}>
           <Button variant="outline-danger">
-            <FiEdit2 />  Make Hotter
+            <FiEdit2 /> Make Hotter
           </Button>
         </Link>{" "}
         <Button variant="outline-danger">
