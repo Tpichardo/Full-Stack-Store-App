@@ -3,7 +3,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 
 export default function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         <Nav.Link as={NavLink} to="/">
           <Navbar.Brand>👚 Boujee Betty Boutique</Navbar.Brand>
