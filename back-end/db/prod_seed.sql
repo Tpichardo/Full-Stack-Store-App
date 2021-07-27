@@ -26,3 +26,8 @@ INSERT INTO boutique (name, brand, category, price, in_stock, url) VALUES
 ('Ed Hardy Jeans', 'Ed Hardy ','Bottoms', 200.00, false, 'https://dtpmhvbsmffsz.cloudfront.net/posts/2015/05/06/554aa1d89c6fcf41330000e4/m_586b38259c6fcf687012f95f.jpg'),
 ('Juicy Couture Purse', 'Juicy Coture', 'Hanbag', 250.00, true, 'https://i.pinimg.com/originals/6c/6d/99/6c6d99befa4c855caa724d6ab21467cc.jpg'),
 ('Hot Pink Python Print Bell Bottoms', 'Gucci By Tom Ford', 'Bottoms', 300.00, false, 'https://a.1stdibscdn.com/archivesE/upload/1121189/v_1216772/1216772_l.jpg');
+
+INSERT INTO reviews
+(item_id, reviewer, title, content, rating)
+VALUES
+('1', 'Evan', 'My Favorite', 'This website crushes it when it comes to awesome explainations', 3);
