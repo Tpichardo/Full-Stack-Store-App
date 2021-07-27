@@ -65,14 +65,14 @@ function ItemDetails({ history, match }) {
         <br></br>
         <div className="showItem"></div>
         <Link to="/boutique">
-          <Button variant="outline-danger">Back</Button>
+          <Button className="mb-5" variant="outline-danger">Back</Button>
         </Link>{" "}
         <Link to={`/boutique/${item.id}/update`}>
-          <Button variant="outline-danger">
+          <Button className="mb-5" variant="outline-danger">
             <FiEdit2 /> Make Hotter
           </Button>
         </Link>{" "}
-        <Button variant="outline-danger">
+        <Button className="mb-5" variant="outline-danger">
           <BsTrash onClick={handleDelete} /> Not Hot
         </Button>{" "}
       </div>

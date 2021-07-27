@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Container, Form, Button } from "react-bootstrap";
 
 function ReviewForm(props) {
   let { id } = useParams();
@@ -38,52 +39,59 @@ function ReviewForm(props) {
     });
   };
   return (
-    <div className="Edit">
+    <Container >
       {props.children}
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="reviewer">Name:</label>
-        <input
-          id="reviewer"
-          value={review.reviewer}
-          type="text"
-          onChange={handleTextChange}
-          placeholder="Name"
-          required
-        />
-        <label htmlFor="title">Title:</label>
-        <input
-          id="title"
-          type="text"
-          required
-          value={review.title}
-          placeholder="Title"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="rating">Rating:</label>
-        <input
-          id="rating"
-          type="number"
-          name="rating"
-          min="0"
-          max="5"
-          step="1"
-          value={review.rating}
-          placeholder="0"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="content">Review:</label>
-        <textarea
-          id="content"
-          type="text"
-          name="content"
-          value={review.content}
-          placeholder="Boujee enough...?"
-          onChange={handleTextChange}
-        />
-        <br />
-        <input type="submit" />
-      </form>
-    </div>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="reviwer">
+          <Form.Label>Name </Form.Label>
+          <Form.Control
+            value={review.reviewer}
+            type="text"
+            required
+            onChange={handleTextChange}
+            placeholder="Name"
+          />
+        </Form.Group>
+        <Form.Group controlId="title">
+          <Form.Label>Title </Form.Label>
+          <Form.Control
+            value={review.title}
+            type="text"
+            required
+            onChange={handleTextChange}
+            placeholder="Title"
+          />
+        </Form.Group>
+
+        <Form.Group controlId="rating">
+          <Form.Label>Rating </Form.Label>
+          <Form.Control
+            value={review.rating}
+            type="number"
+            required
+            onChange={handleTextChange}
+            placeholder="0"
+            min="0"
+            max="5"
+            step="1"
+          />
+        </Form.Group>
+        <Form.Group controlId="content">
+          <Form.Label>Review </Form.Label>
+          <Form.Control
+            value={review.content}
+            as="textarea"
+            rows={3}
+            required
+            onChange={handleTextChange}
+            placeholder="Boujee enough...?"
+          />
+        </Form.Group>
+        <Button variant="outline-danger" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </Container>
   );
 }
 

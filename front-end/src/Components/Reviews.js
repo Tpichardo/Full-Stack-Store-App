@@ -68,7 +68,6 @@ function Reviews() {
 
   return (
     <section className="Reviews">
-      <h2>Your Reviews</h2>
       <ReviewForm handleSubmit={handleAdd}>
         <h3>Add a Boujee Review</h3>
       </ReviewForm>
