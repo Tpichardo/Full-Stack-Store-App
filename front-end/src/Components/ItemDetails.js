@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { withRouter, Link } from "react-router-dom";
 import axios from "axios";
 import { apiURL } from "../util/apiURL";
+import Reviews from "./Reviews.js";
 
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Row from 'react-bootstrap/Row';
+import Row from "react-bootstrap/Row";
 
 const API = apiURL();
 
@@ -35,7 +36,7 @@ function ItemDetails({ history, match }) {
   }, [id, history]);
 
   const handleDelete = async () => {
-    await deleteItem()
+    await deleteItem();
     history.push("/boutique");
   };
 
@@ -61,6 +62,7 @@ function ItemDetails({ history, match }) {
         </Link>
         <button onClick={handleDelete}>Delete</button>
       </div>
+      <Reviews />
     </div>
   );
 }
