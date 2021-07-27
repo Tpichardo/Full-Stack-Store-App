@@ -23,8 +23,6 @@ function Items() {
         });
     }, []);
 
-
-
     return (
         <div>
             <Container fluid="xs">

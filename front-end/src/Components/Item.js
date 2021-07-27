@@ -6,7 +6,8 @@ import { Container, Image, Card } from "react-bootstrap";
 function Item({ item }) {
   return (
     <Container>
-      <Card className="mt-5" border="light" style={{ width: '18rem' }}>
+
+      <Card className='mt-5' border="danger" style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>{item.name}</Card.Title>
           <Link to={`/boutique/${item.id}`}>
@@ -18,6 +19,7 @@ function Item({ item }) {
             />
           </Link>
           ${(item.price).toLocaleString("en-US")}
+
         </Card.Body>
       </Card>
     </Container>
@@ -25,6 +27,3 @@ function Item({ item }) {
 }
 
 export default Item;
-    // <Container>
-    //   <h5>{item.name}</h5>
-    // </Container>
