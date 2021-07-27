@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
 import { useHistory, Link, withRouter } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Form from 'react-bootstrap/Form';
-import Button from "react-bootstrap/Button";
 import { apiURL } from "../util/apiURL.js";
+
+import { Container, Form, Button } from "react-bootstrap";
+import { FcCancel } from "react-icons/fc"
+
 
 const API = apiURL();
 
@@ -26,7 +27,7 @@ function BoutiqueNewForm() {
     name: "",
     brand: "",
     category: "",
-    price: null,
+    price: "",
     in_stock: true,
   });
 
@@ -44,7 +45,6 @@ function BoutiqueNewForm() {
   };
   return (
     <Container>
-      <h1>Edit Item</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
           <Form.Label>Name </Form.Label>
@@ -106,62 +106,16 @@ function BoutiqueNewForm() {
             onChange={handleTextChange}
           />
         </Form.Group>
-        <Button variant="secondary" type="submit">
+        <Button variant="outline-danger" type="submit">
           Submit
         </Button>
       </Form>
       <br />
       <Link to={"/boutique"}>
-        <Button>Cancel</Button>
+        <Button variant="outline-secondary"><FcCancel /> Nevermind not Hot enough  </Button>
       </Link>
-    </Container >
+    </Container>
   );
-  // <div className="New">
-  //   <form onSubmit={handleSubmit}>
-  //     <label htmlFor="name">Name:</label>
-  //     <input
-  //       id="name"
-  //       value={item.name}
-  //       type="text"
-  //       onChange={handleTextChange}
-  //       placeholder="Name of item"
-  //     />
-  //     <label htmlFor="brand">Brand:</label>
-  //     <input
-  //       id="brand"
-  //       type="text"
-  //       value={item.brand}
-  //       placeholder="Brand of item"
-  //       onChange={handleTextChange}
-  //     />
-  //     <label htmlFor="category">Category:</label>
-  //     <input
-  //       id="category"
-  //       type="text"
-  //       value={item.category}
-  //       placeholder="Item category"
-  //       onChange={handleTextChange}
-  //     />
-  //     <label htmlFor="price">Price:</label>
-  //     <input
-  //       id="price"
-  //       type="number"
-  //       value={item.price}
-  //       placeholder="Item price"
-  //       onChange={handleTextChange}
-  //     />
-  //     <label htmlFor="in_stock">In Stock:</label>
-  //     <input
-  //       id="in_stock"
-  //       type="checkbox"
-  //       onChange={handleCheckboxChange}
-  //       checked={item.in_stock}
-  //     />
-  //     <br />
-  //     <input type="submit" />
-  //   </form>
-  // </div>
-  // );
 }
 
 export default withRouter(BoutiqueNewForm);

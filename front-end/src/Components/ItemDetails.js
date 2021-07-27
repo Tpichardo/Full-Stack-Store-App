@@ -4,9 +4,15 @@ import axios from "axios";
 import { apiURL } from "../util/apiURL";
 import Reviews from "./Reviews.js";
 
+<<<<<<< HEAD
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
+=======
+import { Container, Image, Row, Button } from "react-bootstrap";
+import { BsTrash } from 'react-icons/bs'
+import { FiEdit2 } from 'react-icons/fi';
+>>>>>>> 9f301a6592b8d7ed3bee00456fd2ff0c4274b6e9
 
 const API = apiURL();
 
@@ -43,24 +49,34 @@ function ItemDetails({ history, match }) {
   return (
     <div>
       <div className="showItemDetails">
-        <h1>Name: {item.name}</h1>
-        <h5>Brand: {item.brand}</h5>
-        <h5>Category: {item.category}</h5>
-        <h5>Price: ${item.price}</h5>
-        <h5>In stock: {JSON.stringify(item.in_stock)}</h5>
+        <h1>{item.name}</h1>
         <Container>
-          <Row>
-            <Image src={item.url} alt={item.name} roundedCircle />
+          <Row className="justify-content-md-center">
+            <Image
+              src={item.url}
+              style={{ width: 300 }}
+              alt={item.name}
+              className="rounded mx-auto d-block"
+              thumbnail
+            />
           </Row>
-        </Container>
+          <h5>Brand: {item.brand}</h5>
+          <h5>Price: ${item.price}</h5>
+          {JSON.stringify(item.in_stock) === "false" ? <h5 className="text-danger">Out of stock</h5> : <h5 className="text-success">In stock</h5>}
+        </Container>{" "}
+        <br></br>
         <div className="showItem"></div>
         <Link to="/boutique">
-          <button>Back</button>
-        </Link>
+          <Button variant="outline-danger">Back</Button>
+        </Link>{" "}
         <Link to={`/boutique/${item.id}/update`}>
-          <button>Update</button>
-        </Link>
-        <button onClick={handleDelete}>Delete</button>
+          <Button variant="outline-danger">
+            <FiEdit2 />  Make Hotter
+          </Button>
+        </Link>{" "}
+        <Button variant="outline-danger">
+          <BsTrash onClick={handleDelete} /> Not Hot
+        </Button>{" "}
       </div>
       <Reviews />
     </div>

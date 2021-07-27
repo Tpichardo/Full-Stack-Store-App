@@ -3,6 +3,9 @@ import { useState, useEffect, } from 'react';
 import { apiURL } from "../util/apiURL.js";
 import Item from "./Item";
 
+import { CardGroup, Container } from "react-bootstrap";
+
+
 const API = apiURL();
 
 function Items() {
@@ -21,11 +24,15 @@ function Items() {
     }, []);
 
     return (
-        <div>
-            {items.map(item => {
-                return <Item key={item.id} item={item} />
-            })}
-        </div>
+        <Container>
+            <CardGroup className="m-5">
+                {items.map(item => {
+                    return (
+                        <Item item={item} key={item.id} />
+                    )
+                })}
+            </CardGroup>
+        </Container>
     )
 }
 

@@ -1,9 +1,10 @@
 import React from "react";
+import UpdateItemForm from "../Components/UpdateItemForm";
 
 export default function Update() {
   return (
     <div className="updatePage">
-      <h2>Update</h2>
+      <UpdateItemForm />
     </div>
   );
 }

@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+
+import { CardGroup, Card } from "react-bootstrap";
+
 
 function Item({ item }) {
   return (
-    <ul>
-      <li style={{ listStyleType : "none" }}>
-        <Container>
-          <Image src={item.url} style={{ width: 250 }} alt={item.name} roundedCircle/>
-          <Link to={`/boutique/${item.id}`}>{item.name}</Link>
-        </Container>
-      </li>
-    </ul>
+    <CardGroup>
+      <Card className='m-5' border="danger" style={{ width: '18rem' }}>
+        <Card.Title>{item.name}</Card.Title>
+        <Link to={`/boutique/${item.id}`}>
+          <Card.Img variant="top"
+            src={item.url}
+            style={{ width: 250 }}
+            alt={item.name}
+            className="rounded mx-auto d-block "
+          />
+        </Link>
+        ${(item.price).toLocaleString("en-US")}
+      </Card>
+    </CardGroup>
   );
 }
 

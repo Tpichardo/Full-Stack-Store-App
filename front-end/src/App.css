@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
 .App {
-    text-align: center;
-    background-color: pink;
+  text-align: center;
+  transition: 2s;
+  font-family: 'Emilys Candy', cursive;
+  color: #fa1446;
+}
+
+.App:hover {
+  background-color: pink;
+  transition: 2s;
+  width: 100%;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.img.bg {
+    background: url(Images/gilwgsEDIT.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
